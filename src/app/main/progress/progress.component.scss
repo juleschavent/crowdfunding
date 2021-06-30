@@ -1,0 +1,63 @@
+@import '../../../sass/variable.scss';
+
+.container {
+  margin: 0 2rem;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 .3rem rgb(184, 184, 184);
+  border-radius: .7rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  max-width: 65rem;
+}
+
+.datas:not(.last)::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: .11rem;
+  background: rgb(170, 170, 170);
+  margin: 2rem auto;
+}
+
+.datas__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: $color-font;
+}
+
+.datas__subtitle {
+  font-size: 1.3rem;
+  color: $color-font-light;
+}
+
+.last {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .datas:not(.last)::after {
+    display: none;
+  }
+
+  .line {
+    width: .05rem;
+    height: 5rem;
+    background: rgb(170, 170, 170);
+    justify-self: center;
+    align-self: center;
+  }
+
+  .progressBar {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: 1rem 0 2rem 0;
+  }
+}

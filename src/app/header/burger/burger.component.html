@@ -1,0 +1,11 @@
+<img (click)="openBurger()" src="../../assets/images/icon-hamburger.svg" alt="burger menu">
+
+<section *ngIf="isOpen" (click)="openBurger()" class="modal">
+    <div (click)="$event.stopPropagation()" class="modalBurger">
+        <ul class="modalBurger__links">
+            <li class="modalBurger__link" ><a href="#">About</a></li>
+            <li class="modalBurger__link" ><a href="#">Discover</a></li>
+            <li class="modalBurger__link" ><a href="#">Get Started</a></li>
+        </ul>
+    </div>
+</section>

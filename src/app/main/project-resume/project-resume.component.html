@@ -1,0 +1,43 @@
+<article class="container">
+
+    <img class="container__logo" src="./assets/images/logo-mastercraft.svg" alt="logo mastercraft">
+    <h1 class="container__title">Mastercraft Bamboo Monitor Riser</h1>
+    <h2 class="container__subtitle">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h2>
+
+    <section class="btns">
+        <button class="btn btns__back" type="button">Back this project</button>
+
+        <button (click)="bookmarkMob()" *ngIf="isBookmarkedMob === false" class="btn btns__bookmark--mob"><img
+                src="./assets/images/icon-bookmark.svg" alt="bookmark"></button>
+
+        <button (click)="bookmarkMob()" *ngIf="isBookmarkedMob === true" class="btn btns__bookmark--mob">
+            <svg class="btns__bookmark--deskIcon" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <circle fill="#26736f" cx="28" cy="28" r="28" />
+                    <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                </g>
+            </svg>
+        </button>
+
+
+        <button (click)="bookmark()" *ngIf="isBookmarked === false" class="btn btns__bookmark--desk" type="button">
+            <svg class="btns__bookmark--deskIcon" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
+                    <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                </g>
+            </svg>
+            Bookmark</button>
+
+        <button (click)="bookmark()" *ngIf="isBookmarked === true" class="btn btns__bookmark--desk--active"
+            type="button">
+            <svg class="btns__bookmark--deskIcon" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <circle fill="#26736f" cx="28" cy="28" r="28" />
+                    <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+                </g>
+            </svg>
+            Bookmarked</button>
+    </section>
+
+</article>

@@ -1,0 +1,26 @@
+@import '../../../sass/variable.scss';
+
+.container {
+  margin: 3rem 2rem;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 0 .3rem rgb(184, 184, 184);
+  border-radius: .7rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  max-width: 65rem;
+}
+
+.container__title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: $color-font;
+  margin-bottom: 2rem;
+}
+
+.container__text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: $color-font-light;
+}

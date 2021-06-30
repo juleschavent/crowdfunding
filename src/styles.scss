@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap');
+@import './sass/variable.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Commissioner', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
