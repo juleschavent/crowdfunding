@@ -9,6 +9,7 @@ import { ProjectResumeComponent } from './main/project-resume/project-resume.com
 import { ProgressComponent } from './main/progress/progress.component';
 import { ProgressBarComponent } from './main/progress/progress-bar/progress-bar.component';
 import { AboutComponent } from './main/about/about.component';
+import { ClassicComponent } from './main/about/classic/classic.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './main/about/about.component';
     ProjectResumeComponent,
     ProgressComponent,
     ProgressBarComponent,
-    AboutComponent
+    AboutComponent,
+    ClassicComponent
   ],
   imports: [
     BrowserModule,

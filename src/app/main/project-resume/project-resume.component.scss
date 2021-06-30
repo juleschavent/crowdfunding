@@ -24,11 +24,11 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: $color-font;
+  color: $dark-grey;
 }
 
 .container__subtitle {
-  color: $color-font-light;
+  color: $light-grey;
   font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
@@ -45,7 +45,7 @@
 
 .btns__back {
   width: 20rem;
-  background-color: $btn-bg;
+  background-color: $light-cyan;
   color: white;
   border-radius: 10rem;
   margin-right: 1rem;
@@ -55,7 +55,7 @@
   transition: .1s ease;
 
   &:hover {
-      background-color: $btn-bg-hover;
+      background-color: $dark-cyan;
   }
 }
 

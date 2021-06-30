@@ -14,7 +14,7 @@
 .container__title {
   font-weight: 700;
   font-size: 2rem;
-  color: $color-font;
+  color: $dark-grey;
   margin-bottom: 2rem;
 }
 
@@ -22,5 +22,13 @@
   font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 2rem;
-  color: $color-font-light;
+  color: $light-grey;
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    margin: 2rem auto;
+  }
+
+  
 }
