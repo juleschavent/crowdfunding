@@ -10,6 +10,11 @@ import { ProgressComponent } from './main/progress/progress.component';
 import { ProgressBarComponent } from './main/progress/progress-bar/progress-bar.component';
 import { AboutComponent } from './main/about/about.component';
 import { ClassicComponent } from './main/about/classic/classic.component';
+import { BlackComponent } from './main/about/black/black.component';
+import { MahoganyComponent } from './main/about/mahogany/mahogany.component';
+import { ThanksComponent } from './modals/thanks/thanks.component';
+import { ModalsComponent } from './modals/modals.component';
+import { SimplePledgeComponent } from './modals/simple-pledge/simple-pledge.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { ClassicComponent } from './main/about/classic/classic.component';
     ProgressComponent,
     ProgressBarComponent,
     AboutComponent,
-    ClassicComponent
+    ClassicComponent,
+    BlackComponent,
+    MahoganyComponent,
+    ThanksComponent,
+    ModalsComponent,
+    SimplePledgeComponent
   ],
   imports: [
     BrowserModule,

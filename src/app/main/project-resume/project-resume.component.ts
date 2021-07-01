@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackerServiceService } from '../../services/backer-service.service'
 
 @Component({
   selector: 'app-project-resume',
@@ -19,7 +20,7 @@ export class ProjectResumeComponent implements OnInit {
     this.isBookmarkedMob = !this.isBookmarkedMob;
   }
 
-  constructor() { }
+  constructor(public settings: BackerServiceService) { }
 
   ngOnInit(): void {
   }

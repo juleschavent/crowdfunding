@@ -1,0 +1,79 @@
+@import '../../../../sass/variable.scss';
+
+.container {
+  margin: 3rem 0;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 0 .3rem rgb(184, 184, 184);
+  border-radius: .7rem;
+  padding: 2rem;
+  max-width: 65rem;
+}
+
+.container__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(158, 158, 158);
+  margin-bottom: .5rem;
+}
+
+.container__pledge {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(176, 58%, 75%);
+  margin-bottom: 2rem;
+}
+
+.container__desc {
+  font-size: 1.3rem;
+  color: rgb(211, 211, 211);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.container__pledgeLeft {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: rgb(158, 158, 158);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container__pledgeLeft--sub {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(211, 211, 211);
+  margin-left: .5rem;
+}
+
+.container__btn {
+  background: rgb(211, 211, 211);
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.4rem 3rem;
+}
+
+@media screen and (min-width: 650px) {
+  .--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .container__title {
+    margin: 0;
+  }
+
+  .container__pledge {
+    margin: 0;
+  }
+
+  .container__pledgeLeft {
+    margin: auto 0;
+  }
+}

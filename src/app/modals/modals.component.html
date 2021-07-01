@@ -1,0 +1,12 @@
+<div *ngIf="settings.isOpen === true" class="modalBg">
+
+    <section class="container">
+        <i (click)="settings.openBackModal()" class="container__close fas fa-times"></i>
+        <h2 class="container__title">Back this project</h2>
+        <p class="container__text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+        </p>
+
+        <app-simple-pledge></app-simple-pledge>
+    </section>
+
+</div>

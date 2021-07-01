@@ -1,0 +1,19 @@
+<article class="container">
+    <section class="--flex">
+        <div (click)="settings.pledgeChoice()" class="container__radio--out">
+            <div *ngIf="settings.isSimple === true" class="container__radio--in"></div>
+        </div>
+        <h2 class="container__title">Bamboo Stand</h2>
+    </section>
+    <p class="container__desc">You get an ergonomic stand made of natural bamboo. You've helped us launch our
+        promotional campaing, and you'll
+        be added to a special Backer member list.</p>
+
+    <section *ngIf="settings.isSimple === true" class="pledge">
+        <h3 class="pledge__title">Enter your pledge</h3>
+        <form class="pledge__inputs">
+            <input name="inputPledge" required class="pledge__inputs__input" type="text" placeholder="$25">
+            <button type="submit" class="pledge__inputs__btn">Continue</button>
+        </form>
+    </section>
+</article>

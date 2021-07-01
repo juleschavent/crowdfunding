@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BackerServiceService } from '../../../services/backer-service.service'
 
 @Component({
-  selector: 'app-classic',
-  templateUrl: './classic.component.html',
-  styleUrls: ['./classic.component.scss']
+  selector: 'app-black',
+  templateUrl: './black.component.html',
+  styleUrls: ['./black.component.scss']
 })
-export class ClassicComponent implements OnInit {
+export class BlackComponent implements OnInit {
 
   constructor(public settings: BackerServiceService) { }
 
