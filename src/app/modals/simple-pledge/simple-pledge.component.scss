@@ -10,6 +10,10 @@
   max-width: 65rem;
 }
 
+.container--selected {
+    border: 1px solid $light-cyan;
+}
+
 .container__radio--out {
     width: 2.4rem;
     height: 2.4rem;

@@ -1,4 +1,4 @@
-<article class="container">
+<article [ngClass]="{'container--selected':settings.isSimple}" class="container">
     <section class="--flex">
         <div (click)="settings.pledgeChoice()" class="container__radio--out">
             <div *ngIf="settings.isSimple === true" class="container__radio--in"></div>
