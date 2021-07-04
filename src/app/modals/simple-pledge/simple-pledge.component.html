@@ -1,19 +1,28 @@
 <article [ngClass]="{'container--selected':settings.isSimple}" class="container">
-    <section class="--flex">
-        <div (click)="settings.pledgeChoice()" class="container__radio--out">
-            <div *ngIf="settings.isSimple === true" class="container__radio--in"></div>
+    <section class="--flexDesk">
+        <div class="--flex">
+            <div (click)="settings.pledgeSimple()" class="container__radio--out">
+                <div *ngIf="settings.isSimple === true" class="container__radio--in"></div>
+            </div>
+            <div class="--flexDesk">
+                <h2 class="container__title">Bamboo Stand</h2>
+                <h2 class="container__pledge">Pledge $25 or more</h2>
+            </div>
         </div>
-        <h2 class="container__title">Bamboo Stand</h2>
+        <h3 class="--hideMob container__pledgeLeft">{{settings.currSimplePledge}} <span class="container__pledgeLeft--sub">left</span></h3>
     </section>
     <p class="container__desc">You get an ergonomic stand made of natural bamboo. You've helped us launch our
         promotional campaing, and you'll
         be added to a special Backer member list.</p>
 
+    <h3 class="container__pledgeLeft --hideDesk">{{settings.currSimplePledge}} <span class="container__pledgeLeft--sub">left</span></h3>
+
     <section *ngIf="settings.isSimple === true" class="pledge">
         <h3 class="pledge__title">Enter your pledge</h3>
         <form class="pledge__inputs">
-            <input name="inputPledge" required class="pledge__inputs__input" type="text" placeholder="$25">
-            <button type="submit" class="pledge__inputs__btn">Continue</button>
+            <input id="inputPledge" required class="pledge__inputs__input" type="text" placeholder="$25">
+            <p *ngIf="settings.isSimpleUnvalid === true" class="pledge__inputs__error">Can't pledge for $0</p>
+            <button (click)="settings.addPledgeSimple()" type="button" class="pledge__inputs__btn">Continue</button>
         </form>
     </section>
 </article>

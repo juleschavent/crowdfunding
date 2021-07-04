@@ -1,0 +1,26 @@
+<article [ngClass]="{'container--selected':settings.isBlack}" class="container">
+    <section class="--flexDesk">
+        <div class="--flex">
+            <div (click)="settings.pledgeBlack()" class="container__radio--out">
+                <div *ngIf="settings.isBlack === true" class="container__radio--in"></div>
+            </div>
+            <div class="--flexDesk">
+                <h2 class="container__title">Black Edition Stand</h2>
+                <h2 class="container__pledge">Pledge $75 or more</h2>
+            </div>
+        </div>
+        <h3 class="--hideMob container__pledgeLeft">{{settings.currBlackPledge}} <span class="container__pledgeLeft--sub">left</span></h3>
+    </section>
+    <p class="container__desc">You get a Black Special Edition computer stand and a personnal thank you. You'll be added to our Backer member list. Shipping is included.</p>
+
+    <h3 class="container__pledgeLeft --hideDesk">{{settings.currBlackPledge}} <span class="container__pledgeLeft--sub">left</span></h3>
+
+    <section *ngIf="settings.isBlack === true" class="pledge">
+        <h3 class="pledge__title">Enter your pledge</h3>
+        <form class="pledge__inputs">
+            <input id="inputPledge" required class="pledge__inputs__input" type="text" placeholder="$75">
+            <p *ngIf="settings.isBlackUnvalid === true" class="pledge__inputs__error">Can't pledge for $0</p>
+            <button (click)="settings.addPledgeBlack()" type="button" class="pledge__inputs__btn">Continue</button>
+        </form>
+    </section>
+</article>

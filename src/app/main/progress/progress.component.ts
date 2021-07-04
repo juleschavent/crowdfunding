@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PledgeService } from 'src/app/services/pledge.service';
 
 @Component({
   selector: 'app-progress',
@@ -7,13 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
-  currMoney = 69000;
 
-  currBackers = 5007;
-
-  daysLeft = 56;
-
-  constructor() { }
+  constructor(public settings: PledgeService) { }
 
   ngOnInit(): void {
   }

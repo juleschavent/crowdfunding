@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PledgeService } from 'src/app/services/pledge.service';
 
 @Component({
   selector: 'app-progress-bar',
@@ -7,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressBarComponent implements OnInit {
 
-  progress = 69;
-
-  constructor() { }
+  constructor(public settings: PledgeService) { }
 
   ngOnInit(): void {
   }

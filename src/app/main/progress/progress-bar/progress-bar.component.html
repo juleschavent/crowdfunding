@@ -1,8 +1,4 @@
-<!-- <div class="progress__bar__container">
-    <div class="progress-bar {{color}}" [ngStyle]="{'width': progress + '%'}">
-    </div>
-</div> -->
-
 <div class="container">
-    <div class="progressBar" [ngStyle]="{'width.%': progress}"></div>
+    <!-- <div class="progressBar" [ngStyle]="{'width.%': progress}"></div> -->
+    <div class="progressBar" [ngStyle]="{'width.%': settings.currMoney / 1000}"></div>
 </div>

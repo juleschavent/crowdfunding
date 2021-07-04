@@ -1,1 +1,11 @@
-<p>thanks works!</p>
+<div *ngIf="settingsBacker.isThanksOpen === true" class="modalBg">
+
+    <section class="container">
+        <img class="container__checkMark"src="./assets/images/icon-check.svg" alt="icon check">
+        <h2 class="container__title">Thanks for your support!</h2>
+        <p class="container__text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser
+            worldwide. You will get an email once our campaign is completed.</p>
+            <button (click)="settingsBacker.isThanksOpen = false" class="container__btn">Got it!</button>
+    </section>
+
+</div>

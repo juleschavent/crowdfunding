@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackerServiceService } from 'src/app/services/backer-service.service';
 
 @Component({
   selector: 'app-thanks',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThanksComponent implements OnInit {
 
-  constructor() { }
+  constructor(public settingsBacker: BackerServiceService) { }
 
   ngOnInit(): void {
   }

@@ -1,4 +1,4 @@
-<div *ngIf="settings.isOpen === true" class="modalBg">
+<div *ngIf="settings.isBackerOpen === true" class="modalBg">
 
     <section class="container">
         <i (click)="settings.openBackModal()" class="container__close fas fa-times"></i>
@@ -7,6 +7,7 @@
         </p>
 
         <app-simple-pledge></app-simple-pledge>
+        <app-black-pledge></app-black-pledge>
     </section>
 
 </div>

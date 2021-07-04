@@ -15,6 +15,7 @@ import { MahoganyComponent } from './main/about/mahogany/mahogany.component';
 import { ThanksComponent } from './modals/thanks/thanks.component';
 import { ModalsComponent } from './modals/modals.component';
 import { SimplePledgeComponent } from './modals/simple-pledge/simple-pledge.component';
+import { BlackPledgeComponent } from './modals/black-pledge/black-pledge.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SimplePledgeComponent } from './modals/simple-pledge/simple-pledge.comp
     MahoganyComponent,
     ThanksComponent,
     ModalsComponent,
-    SimplePledgeComponent
+    SimplePledgeComponent,
+    BlackPledgeComponent
   ],
   imports: [
     BrowserModule,

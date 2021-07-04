@@ -1,0 +1,64 @@
+@import '../../../sass/variable.scss';
+
+.modalBg {
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 10rem 0;
+  padding-bottom: 70rem;
+  overflow: hidden;
+}
+
+.container {
+  margin: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 50rem 70rem rgba(0, 0, 0, 0.205);
+  border-radius: .7rem;
+  padding: 4rem;
+  padding-bottom: 3rem;
+  max-width: 40rem;
+  position: relative;
+}
+
+.container__checkMark {
+  margin-bottom: 2rem;
+}
+
+.container__title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: $dark-grey;
+  margin-bottom: 2rem;
+}
+
+.container__text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: $light-grey;
+}
+
+.container__btn {
+  background: $light-cyan;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.4rem 3rem;
+  transition: .1s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: $dark-cyan;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    margin: 2rem auto;
+  }
+}

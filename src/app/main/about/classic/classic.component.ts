@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PledgeService } from 'src/app/services/pledge.service';
 import { BackerServiceService } from '../../../services/backer-service.service'
 
 @Component({
@@ -8,7 +9,7 @@ import { BackerServiceService } from '../../../services/backer-service.service'
 })
 export class ClassicComponent implements OnInit {
 
-  constructor(public settings: BackerServiceService) { }
+  constructor(public settingsBacker: BackerServiceService, public settings: PledgeService) { }
 
   ngOnInit(): void {
   }
